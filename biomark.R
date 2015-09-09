@@ -7,6 +7,10 @@ library(Hmisc)
 library("randomForest")
 dunn=read.csv("239N IRON all TC level data sets for modeling Aug 18 2015.csv")
 
+vamp=sample(1:nrow(dunn),139)
+rr=c(1:nrow(dunn))
+tet=setdiff(rr,vamp)
+
 fdunn=dunn
 fdunn$L.category.numeric=as.factor(fdunn$L.category.numeric)
 
