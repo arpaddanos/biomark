@@ -1,6 +1,0 @@
-           predict
-tetarget    NoRelapse Relapse
-  NoRelapse        83       5
-  Relapse          43       9
-> overall_accuracy
-[1] 65.71429
